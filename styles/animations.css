@@ -1,0 +1,358 @@
+/* styles/animations.css */
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.6s ease;
+}
+
+.preloader.hide {
+    opacity: 0;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.loader::before, .loader::after {
+    content: '';
+    position: absolute;
+    border: 3px solid transparent;
+    border-radius: 50%;
+}
+
+.loader::before {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-top-color: var(--secondary-color);
+    animation: spin 1.5s linear infinite;
+}
+
+.loader::after {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-top-color: var(--accent-color);
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Custom Cursor */
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: width 0.3s, height 0.3s, background 0.3s;
+}
+
+.cursor-follower {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9998;
+    transition: 0.2s ease-out;
+}
+
+.cursor.hover {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+.cursor-follower.hover {
+    width: 60px;
+    height: 60px;
+    border-color: var(--primary-color);
+    background: rgba(112, 0, 255, 0.1);
+}
+
+.cursor.click {
+    transform: translate(-50%, -50%) scale(0.5);
+    background: var(--primary-color);
+}
+
+.cursor-follower.click {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+}
+
+/* Animate elements when they come into view */
+.animate {
+    opacity: 0;
+}
+
+/* styles/animations.css (continuation) */
+.animate.animated.fadeIn {
+    animation: fadeIn 1s ease forwards;
+}
+
+.animate.animated.slideInLeft {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.animate.animated.slideInRight {
+    animation: slideInRight 1s ease forwards;
+}
+
+.animate.animated.slideInUp {
+    animation: slideInUp 1s ease forwards;
+}
+
+.animate.animated.scaleIn {
+    animation: scaleIn 1s ease forwards;
+}
+
+/* Animation delays */
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+.delay-4 {
+    animation-delay: 0.8s;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(112, 0, 255, 0.3);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background: var(--primary-light);
+    transform: translateY(-3px);
+}
+
+/* Project cards animation */
+.project-card {
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(15, 14, 23, 0.9));
+    opacity: 0;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.project-link {
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    transition: var(--transition);
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.project-card:hover .project-link {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-link:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.project-link:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+/* Filter buttons animation */
+.filter-btn {
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Project filter animation */
+.project-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.project-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact form input focus effect */
+.form-control {
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(112, 0, 255, 0.2);
+}
+
+/* Floating animation for hero image */
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

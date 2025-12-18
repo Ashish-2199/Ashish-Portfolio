@@ -1,0 +1,61 @@
+/* styles/variables.css */
+:root {
+    /* Main colors */
+    --primary-color: #7000ff;
+    --primary-light: #9c51ff;
+    --primary-dark: #5000b3;
+    --secondary-color: #2cb67d;
+    --secondary-light: #3eda9a;
+    --secondary-dark: #23925d;
+    --accent-color: #ff8906;
+    
+    /* Background colors */
+    --bg-dark: #0f0e17;
+    --bg-card: #191825;
+    --bg-light: #ffffff;
+    
+    /* Text colors */
+    --text-primary: #fffffe;
+    --text-secondary: #94a1b2;
+    --text-muted: #7f8ea3;
+    
+    /* Border colors */
+    --border-color: #2e2e2e;
+    
+    /* Gradient colors */
+    --gradient-primary: linear-gradient(45deg, #7000ff, #9c51ff);
+    --gradient-secondary: linear-gradient(45deg, #2cb67d, #3fbeac);
+    
+    /* Other */
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --transition: all 0.3s ease;
+    
+    /* Font sizes */
+    --font-size-xs: 0.75rem;  /* 12px */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-base: 1rem;   /* 16px */
+    --font-size-lg: 1.125rem; /* 18px */
+    --font-size-xl: 1.25rem;  /* 20px */
+    /* styles/variables.css (continuation) */
+    --font-size-2xl: 1.5rem;   /* 24px */
+    --font-size-3xl: 1.875rem; /* 30px */
+    --font-size-4xl: 2.25rem;  /* 36px */
+    --font-size-5xl: 3rem;     /* 48px */
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;  /* 4px */
+    --spacing-sm: 0.5rem;   /* 8px */
+    --spacing-md: 1rem;     /* 16px */
+    --spacing-lg: 1.5rem;   /* 24px */
+    --spacing-xl: 2rem;     /* 32px */
+    --spacing-2xl: 3rem;    /* 48px */
+    --spacing-3xl: 4rem;    /* 64px */
+    
+    /* Border radius */
+    --border-radius-sm: 0.25rem;  /* 4px */
+    --border-radius-md: 0.5rem;   /* 8px */
+    --border-radius-lg: 1rem;     /* 16px */
+    --border-radius-xl: 1.5rem;   /* 24px */
+    --border-radius-full: 9999px; /* Full rounded */
+}
+  

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Ashish Behara | Data Analyst</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Sai<span>Ashish</span></a>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="assets/docs/resume.pdf" class="nav-link nav-button" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-intro animate fadeIn">
+                    <span class="greeting">👋 Hello, I'm</span>
+                </div>
+                <h1 class="hero-title animate fadeIn delay-1">Sai Ashish Behara</h1>
+                <h2 class="hero-subtitle animate fadeIn delay-2">Data Analyst & ML Specialist</h2>
+                <p class="hero-description animate fadeIn delay-3">
+                    I transform complex data into actionable insights. Expertise in SQL, Python, 
+                    Machine Learning, Data Engineering, and Data Visualization.
+                </p>
+                <div class="hero-cta animate fadeIn delay-3">
+                    <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-stats animate fadeIn delay-4">
+                    <div class="stat">
+                        <h3 class="stat-number">2+</h3>
+                        <p class="stat-title">Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number">5+</h3>
+                        <p class="stat-title">Projects Completed</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number">3.95</h3>
+                        <p class="stat-title">GPA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image floating">
+                <div class="hero-image-container">
+                    <img src="assets/images/profile.jpg" alt="Sai Ashish Behara">
+                </div>
+                <div class="experience-box">
+                    <h3>2+</h3>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">My background and what I do</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image animate slideInLeft">
+                    <div class="about-image-container">
+                        <img src="assets/images/about.jpg" alt="About Me">
+                    </div>
+                </div>
+                <div class="about-text animate slideInRight">
+                    <p>
+                        I'm a Data Analyst with expertise in SQL, Python, Machine Learning, Data Engineering, and Data Visualization. 
+                        With experience in implementing machine learning models, conducting A/B testing, and developing real-time 
+                        dashboards, I help organizations make data-driven decisions.
+                    </p>
+                    <p>
+                        Currently pursuing my Master's in Data Science at Kent State University, I'm expanding my knowledge in 
+                        advanced analytics, machine learning, and big data technologies.
+                    </p>
+                    
+                    <!-- Tabs -->
+                    <div class="tabs">
+                        <div class="tab-links">
+                            <button class="tab-link active" data-tab="experience">Experience</button>
+                            <button class="tab-link" data-tab="education">Education</button>
+                            <button class="tab-link" data-tab="certifications">Certifications</button>
+                        </div>
+                        
+                        <!-- Experience Tab -->
+                        <div class="tab-content active" id="experience">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h3>Data Analyst</h3>
+                                        <span class="timeline-date">Oct 2022 - Nov 2023</span>
+                                        <p class="timeline-company">Cognizant Technology Solutions</p>
+                                        <ul>
+                                            <li>Implemented Machine Learning models to predict sales and optimize inventory</li>
+                                            <li>Conducted A/B testing using statistical techniques (t-tests, ANOVA)</li>
+                                            <li>Performed hyperparameter tuning, improving model performance by 12%</li>
+                                            <li>Engineered key features to enhance model accuracy</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h3>Data Analyst Intern</h3>
+                                        <span class="timeline-date">Feb 2022 - Sep 2022</span>
+                                        <p class="timeline-company">Cognizant Technology Solutions</p>
+                                        <ul>
+                                            <li>Optimized SQL queries, reducing execution time by 40%</li>
+                                            <li>Developed real-time dashboards in Tableau and Power BI</li>
+                                            <li>Created data reports and visualizations using Matplotlib, Seaborn, and ggplot2</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Education Tab -->
+                        <div class="tab-content" id="education">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h3>MS in Data Science</h3>
+                                        <span class="timeline-date">Expected August 2025</span>
+                                        <p class="timeline-company">Kent State University, Kent, OH</p>
+                                        <p>GPA: 3.95/4.0</p>
+                                        <p>Relevant Coursework: Data Mining, Machine Learning, Statistical Analysis, Database Management</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Certifications Tab -->
+                        <div class="tab-content" id="certifications">
+                            <div class="certifications-grid">
+                                <div class="certification-item">
+                                    <div class="certification-icon">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <div class="certification-content">
+                                        <h3>Data Science Professional</h3>
+                                        <p>IBM</p>
+                                    </div>
+                                </div>
+                                <div class="certification-item">
+                                    <div class="certification-icon">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <div class="certification-content">
+                                        <h3>Machine Learning Specialist</h3>
+                                        <p>Coursera</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">What I'm proficient at</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-group animate fadeIn">
+                    <div class="skill-group-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <p>90%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>R</h4>
+                                <p>80%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>SQL</h4>
+                                <p>95%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group animate fadeIn delay-1">
+                    <div class="skill-group-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Supervised Learning</h4>
+                                <p>85%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Unsupervised Learning</h4>
+                                <p>80%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Feature Engineering</h4>
+                                <p>90%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group animate fadeIn delay-2">
+                    <div class="skill-group-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Data Visualization</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Tableau</h4>
+                                <p>90%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Power BI</h4>
+                                <p>85%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Matplotlib/Seaborn</h4>
+                                <p>95%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group animate fadeIn delay-3">
+                    <div class="skill-group-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Data Engineering</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>ETL Pipelines</h4>
+                                <p>85%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Kafka</h4>
+                                <p>80%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>PySpark</h4>
+                                <p>75%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Recent work I've done</p>
+            </div>
+            <div class="project-filters">
+                <button class="project-filter active" data-filter="all">All</button>
+                <button class="project-filter" data-filter="data-pipeline">Data Pipeline</button>
+                <button class="project-filter" data-filter="machine-learning">Machine Learning</button>
+                <button class="project-filter" data-filter="data-analysis">Data Analysis</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="data-pipeline">
+                    <div class="project-img">
+                        <img src="assets/images/projects/project1.jpg" alt="Target Data Pipeline">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Kafka</span>
+                            <span class="project-tag">PySpark</span>
+                            <span class="project-tag">Hive</span>
+                        </div>
+                        <h3 class="project-title">Target Data Pipeline</h3>
+                        <p class="project-description">
+                            Built a robust data pipeline to process sales data from Target's 1,948 stores across the U.S. 
+                            Used Kafka for real-time data streaming and improved data processing efficiency by 30%.
+                        </p>
+                        <a href="#" class="project-view">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="machine-learning">
+                    <div class="project-img">
+                        <img src="assets/images/projects/project2.jpg" alt="Customer Churn Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">PCA</span>
+                        </div>
+                        <h3 class="project-title">Customer Churn Analysis</h3>
+                        <p class="project-description">
+                            Conducted EDA to uncover significant features impacting churn. 
+                            Developed a K-NN model achieving 68.19% accuracy with high sensitivity (96.43%).
+                        </p>
+                        <a href="#" class="project-view">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="data-analysis">
+                    <div class="project-img">
+                        <img src="assets/images/projects/project3.jpg" alt="Netflix Data Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Data Cleaning</span>
+                            <span class="project-tag">Tableau</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <h3 class="project-title">Netflix Data Analysis</h3>
+                        <p class="project-description">
+                            Analyzed 10,000+ Netflix titles to identify trends in TV shows vs. movies,
+                            genre distribution, and country-specific content. Created visualizations
+                            highlighting shifts in content strategy.
+                        </p>
+                        <a href="#" class="project-view">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="data-analysis">
+                    <div class="project-img">
+                        <img src="assets/images/projects/project4.jpg" alt="Walmart Black Friday Sales Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Statistical Analysis</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Visualization</span>
+                        </div>
+                        <h3 class="project-title">Walmart Black Friday Analysis</h3>
+                        <p class="project-description">
+                            Analyzed 550,000+ Black Friday transactions using confidence intervals and 
+                            Central Limit Theorem to estimate population-level spending trends.
+                        </p>
+                        <a href="#" class="project-view">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="data-pipeline">
+                    <div class="project-img">
+                        <img src="assets/images/projects/project5.jpg" alt="Target SQL Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Data Analysis</span>
+                            <span class="project-tag">CTE</span>
+                        </div>
+                        <h3 class="project-title">Target SQL Analysis</h3>
+                        <p class="project-description">
+                            Analyzed order trends, customer distribution, and payment behavior using SQL.
+                            Identified a 136% increase in total payment value from 2017 to 2018 using CTEs and window functions.
+                        </p>
+                        <a href="#" class="project-view">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info animate slideInLeft">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:sbehara@kent.edu">sbehara@kent.edu</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+12342963301">+1 (234) 296-3301</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Kent, OH</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://linkedin.com/in/saiashishbehara" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-kaggle"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form animate slideInRight">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Sai<span>Ashish</span></a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/saiashishbehara" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-kaggle"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sai Ashish Behara. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript Files -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/projects.js"></script>
+</body>
+</html>
